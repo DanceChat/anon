@@ -151,7 +151,35 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            DanceChat is a natural language-guided music-to-dance generation model that leverages a Large Language Model as a choreographer to enhance diversity and alignment in dance motion based on music style and structure. Using multimodal fusion and alignment techniques, DanceChat achieves state-of-the-art performance in rhythmic and stylistic coherence.
+            Music-to-dance generation aims to create human dance
+movements precisely structured to input music. Recent ad-
+vancements have shown promising results in generating
+dance from music, yet significant challenges remain due to
+the semantic gap between music and dance. Unlike text,
+which can directly describe physical motion, music lacks
+explicit information about body movements, making it dif-
+ficult to achieve both musical alignment and stylistic diver-
+sity in generated dance sequences. In this paper, we in-
+troduce DanceChat, a natural language-guided music-to-
+dance generation model inspired by the real-world process
+of dance learning, where learners rely on choreographers
+for guidance. In DanceChat, We treat our model as a dance
+learner, and utilize a Large Language Model (LLM) to per-
+form the role of a choreographer to guide the dance learner
+with precise instructions. In this way, we inject dance mo-
+tion instruction which can guide the model to learn danc-
+ing with more diversity and alignment with the style of the
+music. Our approach consists of three core components:
+(1) an LLM-based guide that generates dance movement in-
+structions based on music structure and style, (2) a multi-
+modal fusion paradigm that enriches music features with
+both beat-aware and textual information, and (3) a multi-
+modal alignment loss that bridges the semantic gap between
+music and motion, enhancing rhythmic and stylistic coher-
+ence. Extensive experiments on the AIST++ dataset, along
+with human evaluations, demonstrate that DanceChat out-
+performs state-of-the-art methods qualitatively and quanti-
+tatively.
           </p>
         </div>
       </div>
