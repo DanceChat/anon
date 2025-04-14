@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>DanceChat: Natural Language-Guided Music-to-Dance Generation</title>
+  <title>DanceChat: Large Language Model-Guided Music-to-Dance Generation</title>
   <link rel="icon" type="image/x-icon" href="static/images/banner.png">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -132,21 +132,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Music-to-dance generation aims to create human dance
-movements precisely structured to input music. Recent advancements have shown promising results in generating
-dance from music, yet significant challenges remain due to
-the semantic gap between music and dance. Unlike text,
-which can directly describe physical motion, music lacks
-explicit information about body movements, making it difficult to achieve both musical alignment and stylistic diversity in generated dance sequences. In this paper, we introduce DanceChat, a natural language-guided music-to-dance generation model inspired by the real-world process
-of dance learning, where learners rely on choreographers
-for guidance. In DanceChat, We treat our model as a dance
-learner, and utilize a Large Language Model (LLM) to perform the role of a choreographer to guide the dance learner
-with precise instructions. In this way, we inject dance motion instruction which can guide the model to learn dancing with more diversity and alignment with the style of the
-music. Our approach consists of three core components:
-(1) an LLM-based guide that generates dance movement instructions based on music structure and style, (2) a multimodal fusion paradigm that enriches music features with
-both beat-aware and textual information, and (3) a multimodal alignment loss that bridges the semantic gap between
-music and motion, enhancing rhythmic and stylistic coherence. Extensive experiments on the AIST++ dataset, along
-with human evaluations, demonstrate that DanceChat outperforms state-of-the-art methods qualitatively and quantitatively.
+            Music-to-dance generation aims to synthesize human dance motion conditioned on musical input. Despite recent progress, significant challenges remain due to the semantic gap between music and dance motion, as music offers only abstract cues, such as melody, groove, and emotion, without explicitly specifying the physical movements. Moreover, a single piece of music can produce multiple plausible dance interpretations. This one-to-many mapping demands additional guidance, as music alone provides limited information for generating diverse dance movements. The challenge is further amplified by the scarcity of paired music and dance data, which restricts the model’s ability to learn diverse dance patterns. In this paper, we introduce DanceChat, a Large Language Model (LLM)-guided music-to-dance generation approach. We use an LLM as a choreographer that provides textual motion instructions, offering explicit, high-level guidance for dance generation. This approach goes beyond implicit learning from music alone, enabling the model to generate dance that is both more diverse and better aligned with musical styles. Our approach consists of three components: (1) an LLM-based pseudo instruction generation module that produces textual dance guidance based on music style and structure, (2) a multi-modal feature extraction and fusion module that integrates music, rhythm, and textual guidance into a shared representation, and (3) a multi-modal alignment loss that ensure the generated dance aligns with both music and language cues. Extensive experiments on AIST++ and human evaluations show that DanceChat outperforms state-of-the-art methods both qualitatively and quantitatively.
           </p>
         </div>
       </div>
